@@ -34,6 +34,5 @@ def get_list(uri):
         print(proto + '://' +src[0] + ':' + src[1])
 
 if __name__ == "__main__":
-    get_list("")
-    for i in range(0,16):
+    for i in range(1,16):
         get_list(str(i))
