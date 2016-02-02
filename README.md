@@ -4,7 +4,7 @@ This is a single python script that scrapes a specified number pages of obfuscat
 hma obfuscated the html source with a lot of display:none elements. Never fear, regex is here.
 
 ###Why?
-Excellent for when grey_harvest and tor dont provide enough IP address. 107 pages (current number of listed pages) is currently giving 5314 proxies.
+Excellent for when grey_harvest and tor dont provide enough IP addresses. 107 pages (current number of listed pages) is currently giving 5314 proxies.
 
 Storage format is full url, intended for instant curl -x usage
 
