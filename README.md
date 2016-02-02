@@ -1,10 +1,10 @@
 # hma-scraper
-This is a single python script that scrapes 16 pages of obfuscated proxy lists at proxylist.hidemyass.com
+This is a single python script that scrapes a specified number pages of obfuscated proxy lists at proxylist.hidemyass.com
 
 hma obfuscated the html source with a lot of display:none elements. Never fear, regex is here.
 
 ###Why?
-Excellent for when grey_harvest and tor dont provide enough IP address. This usually nets 750 proxies.
+Excellent for when grey_harvest and tor dont provide enough IP address. 16 pages usually nets 750 proxies.
 
 Storage format is full url, intended for instant curl -x usage
 
@@ -20,13 +20,14 @@ python 2.7+ or python3
 
 ###Modules used:
 
-re, requests, print_function
+re, requests, print_function, sys
 
-###Install:
+###Install/Usage:
 ```
 $ git clone https://github.com/IDSninja/hma-scraper
 $ cd hma-scraper
-$ python hma-scraper.py > proxylist.txt
+$ python hma-scraper.py <number of pages to scrape> > proxylist.txt
+$ python hma-scraper.py 100 > proxylist.txt
 ```
 
 ####See also:
