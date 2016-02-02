@@ -38,7 +38,8 @@ if __name__ == "__main__":
     error = 'Input the number of pages to scrape. Ex:\npython hma-scraper.py 30'
     try:
         if sys.argv[1].isdigit() == True:
-            for i in range(1,sys.argv[1]):
+            input = int(sys.argv[1])
+            for i in range(1,input):
                 get_list(str(i))
         else:
             print(error)
