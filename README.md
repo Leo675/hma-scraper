@@ -28,3 +28,9 @@ $ git clone https://github.com/IDSninja/hma-scraper
 $ cd hma-scraper
 $ python hma-scraper.py > proxylist.txt
 ```
+
+####See also:
+Another good proxy harvester is grey_harvest:
+
+
+https://pypi.python.org/pypi/grey_harvest/0.1.3.5
