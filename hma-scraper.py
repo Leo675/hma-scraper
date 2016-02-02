@@ -3,6 +3,7 @@
 from __future__ import print_function
 import requests
 import re
+import sys
 
 def get_list(uri):
 
@@ -34,5 +35,13 @@ def get_list(uri):
         print(proto + '://' +src[0] + ':' + src[1])
 
 if __name__ == "__main__":
-    for i in range(1,16):
-        get_list(str(i))
+    error = 'Input the number of pages to scrape. Ex:\npython hma-scraper.py 30'
+    try:
+        if sys.argv[1].isdigit() == True:
+            for i in range(1,100):
+                get_list(str(i))
+        else:
+            print(error)
+    except:
+        print(error)
+    
