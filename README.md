@@ -1,3 +1,5 @@
+DEPRECATED. They changed their site
+
 # hma-scraper
 This is a single python script that scrapes a specified number pages of obfuscated proxy lists at proxylist.hidemyass.com
 
